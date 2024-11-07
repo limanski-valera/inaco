@@ -1,0 +1,236 @@
+// Заголовки, загальні БЕМ блоки та інше...
+.page {
+	padding-top: toRem(100);
+}
+.title {
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.2;
+	color: $darkColor;
+	@include adaptiveValue('font-size', 60, 30);
+}
+//========================================================================================================================================================
+.swiper-pagination {
+	display: flex;
+	justify-content: center;
+	gap: toRem(4);
+	padding-top: toRem(40);
+	&.swiper-pagination-lock {
+		display: none;
+	}
+}
+.swiper-pagination-bullet {
+	width: toRem(6);
+	height: toRem(6);
+	flex: 0 0 auto;
+	border-radius: 50%;
+	background-color: $lightBlueColor;
+	opacity: 0.5;
+	&.swiper-pagination-bullet-active {
+		opacity: 1;
+		background-color: $darkColor;
+	}
+}
+.swiper-button-prev {
+	flex: 0 0 auto;
+	position: relative;
+	z-index: 3;
+	display: inline-block;
+	width: 18px;
+	height: 11px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDEyIDE4IiBmaWxsPSJub25lIj4KPHBhdGggZD0iTTEwLjQ2NDkgMS4wNjkwN0MxMS4wMzg1IDEuNjQ4NjYgMTEuMDM5IDIuNTgxODUgMTAuNDY2IDMuMTYyMDVMNC43MDEwOCA5TDEwLjQ2NiAxNC44Mzc5QzExLjAzOSAxNS40MTgyIDExLjAzODUgMTYuMzUxMyAxMC40NjQ5IDE2LjkzMDlDOS44ODIzNiAxNy41MTk2IDguOTMxNDEgMTcuNTE5NiA4LjM0ODg3IDE2LjkzMDlMMS44OTIyOCAxMC40MDY4QzEuMTIxMDEgOS42Mjc1MSAxLjEyMTAyIDguMzcyNDkgMS44OTIyOCA3LjU5MzE2TDguMzQ4ODcgMS4wNjkwN0M4LjkzMTQxIDAuNDgwNDQ4IDkuODgyMzYgMC40ODA0NDggMTAuNDY0OSAxLjA2OTA3WiIgZmlsbD0iIzJEMjM3NyIvPgo8L3N2Zz4');
+}
+.swiper-button-next {
+	flex: 0 0 auto;
+	position: relative;
+	z-index: 3;
+	display: inline-block;
+	width: 18px;
+	height: 11px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDEyIDE4IiBmaWxsPSJub25lIj4KPHBhdGggZD0iTTEuNTM1MSAxNi45MzA5QzAuOTYxNTE4IDE2LjM1MTMgMC45NjEwMDkgMTUuNDE4MiAxLjUzMzk2IDE0LjgzNzlMNy4yOTg5MiA5TDEuNTMzOTYgMy4xNjIwNUMwLjk2MTAxIDIuNTgxODUgMC45NjE1MTggMS42NDg2NiAxLjUzNTEgMS4wNjkwN0MyLjExNzY0IDAuNDgwNDQ4IDMuMDY4NTkgMC40ODA0NDggMy42NTExMyAxLjA2OTA3TDEwLjEwNzcgNy41OTMxNkMxMC44NzkgOC4zNzI0OSAxMC44NzkgOS42Mjc1MSAxMC4xMDc3IDEwLjQwNjhMMy42NTExMyAxNi45MzA5QzMuMDY4NTkgMTcuNTE5NiAyLjExNzY0IDE3LjUxOTYgMS41MzUxIDE2LjkzMDlaIiBmaWxsPSIjMkQyMzc3Ii8+Cjwvc3ZnPg==');
+}
+//========================================================================================================================================================
+.breadcrumbs {
+	padding-top: toRem(60);
+	margin-bottom: toRem(30);
+	&__container {
+		display: flex;
+		gap: toRem(14);
+		align-items: center;
+		span {
+			font-size: toRem(10);
+			color: $lightBlueColor;
+		}
+	}
+	&__link {
+		color: $lightBlueColor;
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		&.disabled {
+			color: $mainBlueColor;
+			pointer-events: none;
+		}
+	}
+}
+//========================================================================================================================================================
+.heading {
+	@include adaptiveValue('margin-bottom', 60, 30);
+	&__container {
+	}
+	&__title {
+		padding: 0 toRem(15);
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: #fff;
+		background: url('@img/heading-bg.jpg') center center / cover no-repeat;
+		border-radius: toRem(30);
+		overflow: hidden;
+		@include adaptiveValue('padding-top', 128, 65);
+		@include adaptiveValue('padding-bottom', 128, 65);
+		@include adaptiveValue('font-size', 60, 20);
+	}
+}
+//========================================================================================================================================================
+.faq {
+	@include adaptiveValue('margin-bottom', 180, 150);
+}
+//========================================================================================================================================================
+.services {
+	@include adaptiveValue('padding-bottom', 180, 150);
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(20);
+	}
+}
+.service {
+	border-radius: 30px;
+	background-color: #fff;
+	box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+	display: flex;
+	@media (max-width: $mobile) {
+		flex-direction: column;
+	}
+	&__content {
+		align-self: center;
+		padding: toRem(40) toRem(60);
+		flex: 1 1 auto;
+		@media (max-width: $mobile) {
+			padding: toRem(30) toRem(15);
+		}
+	}
+	&__label {
+		color: $mainBlueColor;
+		font-weight: 700;
+		@include adaptiveValue('font-size', 28, 20, 0, 1380, 768);
+		&:not(:last-child) {
+			margin-bottom: toRem(20);
+		}
+	}
+	&__text {
+		@include adaptiveValue('font-size', 20, 16, 0, 1380, 768);
+	}
+	&__price {
+		flex: 0 0 auto;
+		width: toRem(314);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background-color: $mainBlueColor;
+		color: #fff;
+		border-radius: 30px;
+		font-size: toRem(20);
+		@media (max-width: $mobile) {
+			width: 100%;
+			padding: toRem(16);
+		}
+	}
+}
+//========================================================================================================================================================
+.article {
+	line-height: 1.15;
+	@include adaptiveValue('font-size', 20, 16, 0, 1380, 768);
+	img {
+		max-width: 100%;
+		height: auto !important;
+	}
+	h2,
+	h3,
+	h4 {
+		font-weight: 700;
+	}
+	h2 {
+		font-size: toRem(28);
+		@media (max-width: $mobile) {
+			display: none;
+		}
+	}
+	h3 {
+		margin-bottom: toRem(20);
+		@include adaptiveValue('font-size', 24, 18, 0, 1380, 768);
+	}
+	p {
+		margin-bottom: toRem(20);
+	}
+}
+//========================================================================================================================================================
+.knowladge-login {
+	flex: 1 1 auto;
+	&__message {
+		text-align: center;
+		padding-top: toRem(80);
+		margin-bottom: toRem(120);
+		font-size: toRem(20);
+		color: $lightBlueColor;
+	}
+	&__content {
+		padding: toRem(70);
+		border-radius: 30px;
+		box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+		background-color: #fff;
+		@media (max-width: $tablet) {
+			padding: toRem(40) toRem(15);
+		}
+	}
+}
+.login {
+	max-width: toRem(718);
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	&__logo {
+		display: block;
+		max-width: toRem(113);
+		margin: 0 auto;
+		margin-bottom: toRem(30);
+		img {
+			width: 100%;
+		}
+	}
+	&__title {
+		font-size: toRem(20);
+		text-align: center;
+		color: $mainBlueColor;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-bottom: toRem(30);
+	}
+}
+//========================================================================================================================================================
+.error {
+	padding: toRem(10) 0;
+	text-align: center;
+	color: rgb(160, 0, 0);
+}

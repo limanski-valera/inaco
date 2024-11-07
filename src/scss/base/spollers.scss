@@ -1,0 +1,87 @@
+// Базові стилі спойлерів
+// Сніппет (HTML): spoller
+
+// Блок зі спойлерами
+.spollers {
+	display: grid;
+	gap: 15px;
+	.faq & {
+		gap: toRem(20);
+	}
+}
+// Спойлер
+.spollers__item {
+	font-size: toRem(20);
+	background-color: #fff;
+	box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+	border-radius: toRem(10);
+	.faq & {
+		background-color: #fff;
+
+		border-radius: 30px;
+	}
+}
+// Заголовок спойлера
+.spollers__title {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: toRem(10);
+	align-items: center;
+	cursor: default;
+	text-align: left;
+	padding: toRem(10);
+	position: relative;
+	list-style: none;
+	font-size: toRem(14);
+	color: $lightBlueColor;
+	.faq & {
+		border-radius: 30px;
+		background-color: rgba(45, 35, 119, 0.05);
+		padding: toRem(28) toRem(60);
+		color: $mainBlueColor;
+		font-size: toRem(20);
+		transition: background-color 0.3s;
+		@media (max-width: $tablet) {
+			padding: toRem(28) toRem(20);
+			font-size: toRem(16);
+		}
+		&._spoller-active {
+			background-color: #f0f0f6;
+		}
+	}
+	&::marker,
+	&::-webkit-details-marker {
+		display: none;
+	}
+	._spoller-init & {
+		cursor: pointer;
+		&::after {
+			flex: 0 0 auto;
+			font-family: 'icons';
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			content: '\e901';
+			transition: transform 0.3s;
+		}
+		&._spoller-active::after {
+			transform: rotate(180deg);
+		}
+	}
+}
+// Контент спойлера
+.spollers__body {
+	padding: toRem(20) toRem(10);
+	.faq & {
+		padding: toRem(20) toRem(60);
+		@media (max-width: $tablet) {
+			padding: 0 toRem(20) toRem(20);
+			font-size: toRem(16);
+		}
+	}
+}

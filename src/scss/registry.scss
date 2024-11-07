@@ -1,0 +1,52 @@
+.registry {
+	@include adaptiveValue('padding-top', 60, 30);
+	&__container {
+		max-width: toRem(600);
+	}
+	&__title {
+		text-align: center;
+		font-size: toRem(20);
+		text-transform: uppercase;
+		font-weight: 700;
+		color: $mainBlueColor;
+		margin-bottom: toRem(30);
+	}
+	&__form {
+		margin-bottom: toRem(30);
+	}
+	&__inputs {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(16);
+		margin-bottom: toRem(30);
+	}
+	&__checkbox {
+		margin-bottom: toRem(30);
+		.checkbox__label {
+			color: $darkColor;
+			&::before {
+				border-color: $darkColor;
+			}
+		}
+		.checkbox__input:checked + .checkbox__label::before {
+			background-color: $darkColor;
+		}
+	}
+	&__button {
+	}
+	&__footer {
+		color: $darkColor;
+		text-align: center;
+	}
+	&__text {
+		margin-bottom: toRem(11);
+	}
+	&__login-link {
+		font-weight: 700;
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+	@@include('html/_head.htm',{ "title":"Personal Account" })
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="section-filters profile-section">
+					<div class="section-filters__container">
+						<aside class="section-filters__filters filters profile">
+							<div class="profile__image">
+								<img src="@img/women.jpg" alt="" />
+							</div>
+							<div class="profile__body">
+								<h3 class="profile__name">Емілі Парк</h3>
+								<div class="profile__items">
+									<div class="profile__item">
+										<h4 class="profile__label">Номер телефону</h4>
+										<div class="profile__value">+48 55 12345</div>
+									</div>
+									<div class="profile__item">
+										<h4 class="profile__label">E-Mail</h4>
+										<div class="profile__value">park@gmail.com</div>
+									</div>
+									<div class="profile__item">
+										<h4 class="profile__label">Вид діяльності</h4>
+										<div class="profile__value">Міська мобільність</div>
+									</div>
+									<div class="profile__item">
+										<h4 class="profile__label">Країна</h4>
+										<div class="profile__value">Польща</div>
+									</div>
+								</div>
+								<a href="#" class="profile__button button button--fw button--medium">Редагувати</a>
+							</div>
+						</aside>
+						<div class="cards">
+							<h2 class="profile-section__title">
+								Обране
+								<span class="_icon-heart-filled"></span>
+							</h2>
+							<!--<div class="cards__placeholder">Список порожній</div>-->
+							<div class="cards__items">
+								<article class="card">
+									<a href="#" class="card__image">
+										<img src="@img/women.jpg" alt="" />
+									</a>
+									<div class="card__body">
+										<div class="card__heading">
+											<h3 class="card__title" style="margin-bottom: 0">
+												<a href="#">келлі ленд</a>
+											</h3>
+											<button class="card__favorite-btn _icon-heart"></button>
+										</div>
+										<div class="card__description">
+											<h4 class="card__description-label">КОРОТКА ІНФОРМАЦІЯ</h4>
+											<div class="card__description-text">Власниця компанії “Clever”</div>
+										</div>
+										<div class="card__values">
+											<div class="card__value">
+												<h4 class="card__value-label">Інвестує</h4>
+												<div class="card__value-text">10 000 000 - 50 000 000 €</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Тип</h4>
+												<div class="card__value-text">Стартап і МСП</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Сектор</h4>
+												<div class="card__value-text">Малі і середні підприємства. Проекти міської мобільності середньої капіталізації</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Країна</h4>
+												<div class="card__value-text">Фінляндія</div>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="card">
+									<a href="#" class="card__image">
+										<img src="@img/train.jpg" alt="" />
+									</a>
+									<div class="card__body">
+										<div class="card__heading">
+											<div class="card__code">IНПО-20243899</div>
+											<button class="card__favorite-btn _icon-heart"></button>
+										</div>
+										<h3 class="card__title">
+											<a href="#">Дистанційне початкове інвестування</a>
+										</h3>
+										<div class="card__description">
+											<h4 class="card__description-label">КОРОТКИЙ ОПИС</h4>
+											<div class="card__description-text">
+												REMOTED - це підприємство, що розвиває міську мобільність. Ми використовуємо автоматизовані автобуси як частинку громадського транспорту та мобільності
+												старовинного містечка.
+											</div>
+										</div>
+										<div class="card__values">
+											<div class="card__value">
+												<h4 class="card__value-label">Необхідні інвестиції</h4>
+												<div class="card__value-text">6 000 000 €</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Тип</h4>
+												<div class="card__value-text">Стартап і МСП</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Сектор</h4>
+												<div class="card__value-text">Малі і середні підприємства. Проекти міської мобільності середньої капіталізації</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Країна</h4>
+												<div class="card__value-text">Фінляндія</div>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+				@@include('html/_contacts-section.htm',{})
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

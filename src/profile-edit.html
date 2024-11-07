@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+	@@include('html/_head.htm',{ "title":"Registry" })
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="registry">
+					<div class="registry__container">
+						<h1 class="registry__title">РЕЄСТРАЦІЯ</h1>
+						<form action="#" class="registry__form">
+							<div class="registry__inputs">
+								<input type="text" placeholder="Ім’я" class="input" required />
+								<input type="text" placeholder="Призвіще" class="input" required />
+								<input type="tel" placeholder="Номер телефону" class="input" required />
+								<input type="email" placeholder="E-mail" class="input" required />
+								<input type="text" placeholder="Країна" class="input" required />
+								<select name="form[]" data-class-modif="form" required>
+									<option value="" selected>Вид діяльності</option>
+									<option value="2">Пункт №2</option>
+									<option value="3">Пункт №3</option>
+									<option value="4">Пункт №4</option>
+								</select>
+								<div style="font-weight: 700; color: #2d2377" accept="image/png, image/jpeg*">Оберіть фото</div>
+								<input type="file" />
+							</div>
+							<button type="submit" class="registry__button button button--fw button--medium">Зареєструватись</button>
+							<!--<div class="error">Сталася помилка</div>-->
+						</form>
+						<div class="registry__footer">
+							<div class="registry__text">Маєте обліковий запис?</div>
+							<a href="knowladge-login.html" class="registry__login-link">Увійти</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

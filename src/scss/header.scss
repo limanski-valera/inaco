@@ -1,0 +1,97 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: toRem(4);
+	right: toRem(4);
+	padding: toRem(20) 0;
+	z-index: 100;
+	background-color: #fff;
+	border-radius: 0px 0px 30px 30px;
+	@media (min-width: $mobile) {
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+	}
+	@media (max-width: $mobile) {
+		padding-top: toRem(30);
+		padding-bottom: toRem(20);
+	}
+	&__container {
+		gap: toRem(30);
+		@media (min-width: $mobile) {
+			display: grid;
+			grid-template-columns: toRem(220) 1fr toRem(220);
+		}
+		@media (max-width: $mobile) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+	&__left {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: toRem(20);
+	}
+	&__logo {
+		max-width: toRem(92);
+		display: inline-block;
+		img {
+			max-width: 100%;
+		}
+	}
+	&__languages {
+		display: flex;
+		gap: toRem(10);
+		align-items: center;
+		font-size: toRem(18);
+		font-family: 'Inter', sans-serif;
+	}
+	&__language {
+		color: $lightBlueColor;
+		&.active {
+			color: $darkColor;
+		}
+	}
+	&__menu {
+	}
+	&__right {
+		display: flex;
+		justify-content: flex-end;
+		gap: toRem(50);
+		align-items: center;
+		position: relative;
+		z-index: 5;
+		@media (max-width: $mobile) {
+			gap: toRem(25);
+		}
+	}
+	&__account-btn {
+		padding: toRem(10);
+		font-size: toRem(38);
+		color: $darkColor;
+		transition: color 0.3s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $lightBlueColor;
+			}
+		}
+	}
+}
+.active {
+}
+.menu {
+	&__body {
+	}
+	&__list {
+	}
+	&__item {
+	}
+	&__link {
+	}
+	&__icon {
+	}
+}
+._icon-account {
+}
+.icon-menu {
+}

@@ -1,0 +1,228 @@
+.section-filters {
+	@include adaptiveValue('padding-bottom', 200, 150);
+	&__container {
+		@media (min-width: $mobile) {
+			display: flex;
+			gap: toRem(30);
+			position: relative;
+		}
+	}
+	&__filters {
+		@media (max-width: $mobile) {
+			margin-bottom: toRem(150);
+		}
+	}
+}
+.filters {
+	padding: toRem(23) toRem(16);
+	border-radius: 30px;
+	background-color: #fff;
+	box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+	@media (min-width: $mobile) {
+		width: toRem(330);
+		align-self: flex-start;
+		position: sticky;
+		top: toRem(120);
+	}
+	flex: 0 0 auto;
+	&__heading {
+		display: flex;
+		gap: toRem(20);
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: toRem(42);
+	}
+	&__title {
+		display: flex;
+		align-items: center;
+		gap: toRem(12);
+		font-size: toRem(24);
+		color: $mainBlueColor;
+		font-weight: 700;
+		span {
+			font-size: toRem(17);
+		}
+	}
+	&__counter {
+		width: toRem(23);
+		height: toRem(23);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		background-color: $mainBlueColor;
+		color: #fff;
+		font-size: toRem(14);
+	}
+	&__form {
+	}
+	&__spollers {
+		margin-bottom: toRem(42);
+		display: flex;
+		flex-direction: column;
+		gap: toRem(16);
+	}
+	&__items {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(10);
+	}
+	&__buttons {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(9);
+	}
+	&__button {
+	}
+}
+.spollers {
+	&__item {
+	}
+	&__title {
+	}
+	&__body {
+		.checkbox__label {
+			color: $darkColor;
+			&::before {
+				border-color: $darkColor;
+			}
+		}
+		.checkbox__input:checked + .checkbox__label:before {
+			background: $darkColor;
+		}
+	}
+}
+//========================================================================================================================================================
+.cards {
+	&__placeholder {
+		color: $lightBlueColor;
+		&:not(:last-child) {
+			margin-bottom: toRem(30);
+		}
+	}
+	&__items {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(30);
+		margin-bottom: toRem(30);
+	}
+	&__button {
+		@media (max-width: $mobile) {
+			width: 100%;
+			justify-content: center;
+		}
+	}
+}
+.card {
+	@media (min-width: $tablet) {
+		display: flex;
+		gap: toRem(30);
+	}
+	&__image {
+		border-radius: 30px;
+		overflow: hidden;
+		@media (min-width: $tablet) {
+			flex: 0 0 34.705882%; /* 354/1020 */
+		}
+		@media (max-width: $tablet) {
+			padding-bottom: 101.351351%; /* 375/370 */
+			position: relative;
+			display: block;
+			margin-bottom: toRem(10);
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
+			}
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: transform 0.3s;
+			@media (max-width: $tablet) {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+	&__body {
+		padding: toRem(30);
+		background-color: #fff;
+		border-radius: 30px;
+		box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+		flex: 1 1 auto;
+	}
+	&__heading {
+		display: flex;
+		justify-content: space-between;
+		gap: toRem(30);
+		align-items: center;
+		color: $mainBlueColor;
+		margin-bottom: toRem(30);
+	}
+	&__code {
+		font-size: toRem(18);
+	}
+	&__favorite-btn {
+		flex: 0 0 auto;
+		font-size: toRem(27);
+		color: $mainBlueColor;
+		transition: transform 0.3s;
+		@media (any-hover: hover) {
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+	&__title {
+		font-size: toRem(20);
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: toRem(30);
+		color: $mainBlueColor;
+		a {
+			@media (any-hover: hover) {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	&__description {
+		margin-bottom: toRem(30);
+	}
+	&__description-label {
+		font-weight: 700;
+		color: $lightBlueColor;
+		margin-bottom: toRem(12);
+	}
+	&__description-text {
+		line-height: 1.15;
+	}
+	&__values {
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		row-gap: toRem(18);
+		column-gap: toRem(60);
+		@media (max-width: $mobileSmall) {
+			grid-template-columns: 1fr;
+		}
+	}
+	&__value {
+		max-width: toRem(280);
+	}
+	&__value-label {
+		font-weight: 700;
+		margin-bottom: toRem(12);
+		color: $mainBlueColor;
+	}
+	&__value-text {
+		line-height: 1.15;
+	}
+}
+._icon-heart {
+}

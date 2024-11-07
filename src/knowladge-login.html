@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	@@include('html/_head.htm',{ "title":"Personal Account" })
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="section-filters profile-section">
+					<div data-tabs class="tabs section-filters__container">
+						<aside class="section-filters__filters filters profile">
+							<nav data-tabs-titles class="tabs__navigation">
+								<button data-tabs-title type="button" class="tabs__title _tab-active">Інвестиції</button>
+								<button data-tabs-title type="button" class="tabs__title">Як знайти інвестора для свого проекту?</button>
+								<button data-tabs-title type="button" class="tabs__title">Інвестиції</button>
+								<button data-tabs-title type="button" class="tabs__title">Як знайти інвестора для свого проекту?</button>
+								<button data-tabs-title type="button" class="tabs__title">Інвестиції</button>
+								<button data-tabs-title type="button" class="tabs__title">Як знайти інвестора для свого проекту?</button>
+								<button data-tabs-title type="button" class="tabs__title">Інвестиції</button>
+								<button data-tabs-title type="button" class="tabs__title">Як знайти інвестора для свого проекту?</button>
+							</nav>
+							<div class="mobile-arrows">
+								<button class="prevTab _icon-arrow-right disabled"></button>
+								<button class="nextTab _icon-arrow-right"></button>
+							</div>
+						</aside>
+						<div class="knowladge-login">
+							<div class="knowladge-login__message">Авторизуйтесь, щоб отримати доступ до навчальних матеріалів</div>
+							<div class="knowladge-login__content">
+								<div class="login">
+									<a href="home.html" class="login__logo"><img src="@img/logo.svg" alt="" /></a>
+									<h3 class="login__title">Вхід</h3>
+									<form action="#" class="registry__form">
+										<div class="registry__inputs">
+											<input type="email" placeholder="Email" class="input" required />
+											<input type="password" placeholder="Пароль" class="input" required />
+										</div>
+										<button type="submit" class="registry__button button button--fw">Увійти</button>
+										<!--<div class="error">Сталася помилка</div>-->
+									</form>
+									<div class="registry__footer">
+										<div class="registry__text">Не маєте облікового запису?</div>
+										<a href="registry.html" class="registry__login-link">Зареєструватись</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				@@include('html/_contacts-section.htm',{})
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

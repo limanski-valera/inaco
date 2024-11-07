@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+	@@include('html/_head.htm',{ "title":"Investment Projects" })
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<nav class="breadcrumbs">
+					<div class="breadcrumbs__container">
+						<a href="home.html" class="breadcrumbs__link">Головна</a>
+						<span class="_icon-arrow-right"></span>
+						<a href="" class="breadcrumbs__link disabled">Івнестиційні проекти та стартапи</a>
+					</div>
+				</nav>
+				<div class="section-filters">
+					<div class="section-filters__container">
+						<aside class="section-filters__filters filters">
+							<div class="filters__heading">
+								<h2 class="filters__title">
+									<span class="_icon-filter"></span>
+									Фільтри
+								</h2>
+								<span class="filters__counter">0</span>
+							</div>
+							<form action="#" class="filters__form">
+								<div data-spollers class="filters__spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">Тип інвестиції</summary>
+										<div class="spollers__body">
+											<div class="filters__items">
+												<div class="checkbox">
+													<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+													<label for="c_1" class="checkbox__label"><span class="checkbox__text">Прямі</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+													<label for="c_2" class="checkbox__label"><span class="checkbox__text">Непрямі</span></label>
+												</div>
+											</div>
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">Тип фінансування</summary>
+										<div class="spollers__body">
+											<div class="filters__items">
+												<div class="checkbox">
+													<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+													<label for="c_1" class="checkbox__label"><span class="checkbox__text">Прямі</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+													<label for="c_2" class="checkbox__label"><span class="checkbox__text">Непрямі</span></label>
+												</div>
+											</div>
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">Місцезнаходження</summary>
+										<div class="spollers__body">
+											<div class="filters__items">
+												<div class="checkbox">
+													<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+													<label for="c_1" class="checkbox__label"><span class="checkbox__text">Прямі</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+													<label for="c_2" class="checkbox__label"><span class="checkbox__text">Непрямі</span></label>
+												</div>
+											</div>
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">Галузь</summary>
+										<div class="spollers__body">
+											<div class="filters__items">
+												<div class="checkbox">
+													<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+													<label for="c_1" class="checkbox__label"><span class="checkbox__text">Прямі</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+													<label for="c_2" class="checkbox__label"><span class="checkbox__text">Непрямі</span></label>
+												</div>
+											</div>
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">Сума</summary>
+										<div class="spollers__body">
+											<div class="filters__items">
+												<div class="checkbox">
+													<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+													<label for="c_1" class="checkbox__label"><span class="checkbox__text">Прямі</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+													<label for="c_2" class="checkbox__label"><span class="checkbox__text">Непрямі</span></label>
+												</div>
+											</div>
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">Період подачі</summary>
+										<div class="spollers__body">
+											<div class="filters__items">
+												<div class="checkbox">
+													<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+													<label for="c_1" class="checkbox__label"><span class="checkbox__text">Прямі</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+													<label for="c_2" class="checkbox__label"><span class="checkbox__text">Непрямі</span></label>
+												</div>
+											</div>
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">Сортування</summary>
+										<div class="spollers__body">
+											<div class="filters__items">
+												<div class="checkbox">
+													<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+													<label for="c_1" class="checkbox__label"><span class="checkbox__text">Прямі</span></label>
+												</div>
+												<div class="checkbox">
+													<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" />
+													<label for="c_2" class="checkbox__label"><span class="checkbox__text">Непрямі</span></label>
+												</div>
+											</div>
+										</div>
+									</details>
+								</div>
+								<div class="filters__buttons">
+									<button class="filters__button button button--fw">Застосувати</button>
+									<button class="filters__button button button--fw button--transparent">Скинути фільтри</button>
+								</div>
+							</form>
+						</aside>
+						<div class="cards">
+							<div class="cards__items">
+								<article class="card">
+									<a href="#" class="card__image">
+										<img src="@img/train.jpg" alt="" />
+									</a>
+									<div class="card__body">
+										<div class="card__heading">
+											<div class="card__code">IНПО-20243899</div>
+											<button class="card__favorite-btn _icon-heart"></button>
+										</div>
+										<h3 class="card__title">
+											<a href="#">Дистанційне початкове інвестування</a>
+										</h3>
+										<div class="card__description">
+											<h4 class="card__description-label">КОРОТКИЙ ОПИС</h4>
+											<div class="card__description-text">
+												REMOTED - це підприємство, що розвиває міську мобільність. Ми використовуємо автоматизовані автобуси як частинку громадського транспорту та мобільності
+												старовинного містечка.
+											</div>
+										</div>
+										<div class="card__values">
+											<div class="card__value">
+												<h4 class="card__value-label">Необхідні інвестиції</h4>
+												<div class="card__value-text">6 000 000 €</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Тип</h4>
+												<div class="card__value-text">Стартап і МСП</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Сектор</h4>
+												<div class="card__value-text">Малі і середні підприємства. Проекти міської мобільності середньої капіталізації</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Країна</h4>
+												<div class="card__value-text">Фінляндія</div>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="card">
+									<a href="#" class="card__image">
+										<img src="@img/train.jpg" alt="" />
+									</a>
+									<div class="card__body">
+										<div class="card__heading">
+											<div class="card__code">IНПО-20243899</div>
+											<button class="card__favorite-btn _icon-heart"></button>
+										</div>
+										<h3 class="card__title">
+											<a href="#">Дистанційне початкове інвестування</a>
+										</h3>
+										<div class="card__description">
+											<h4 class="card__description-label">КОРОТКИЙ ОПИС</h4>
+											<div class="card__description-text">
+												REMOTED - це підприємство, що розвиває міську мобільність. Ми використовуємо автоматизовані автобуси як частинку громадського транспорту та мобільності
+												старовинного містечка.
+											</div>
+										</div>
+										<div class="card__values">
+											<div class="card__value">
+												<h4 class="card__value-label">Необхідні інвестиції</h4>
+												<div class="card__value-text">6 000 000 €</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Тип</h4>
+												<div class="card__value-text">Стартап і МСП</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Сектор</h4>
+												<div class="card__value-text">Малі і середні підприємства. Проекти міської мобільності середньої капіталізації</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Країна</h4>
+												<div class="card__value-text">Фінляндія</div>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="card">
+									<a href="#" class="card__image">
+										<img src="@img/train.jpg" alt="" />
+									</a>
+									<div class="card__body">
+										<div class="card__heading">
+											<div class="card__code">IНПО-20243899</div>
+											<button class="card__favorite-btn _icon-heart"></button>
+										</div>
+										<h3 class="card__title">
+											<a href="#">Дистанційне початкове інвестування</a>
+										</h3>
+										<div class="card__description">
+											<h4 class="card__description-label">КОРОТКИЙ ОПИС</h4>
+											<div class="card__description-text">
+												REMOTED - це підприємство, що розвиває міську мобільність. Ми використовуємо автоматизовані автобуси як частинку громадського транспорту та мобільності
+												старовинного містечка.
+											</div>
+										</div>
+										<div class="card__values">
+											<div class="card__value">
+												<h4 class="card__value-label">Необхідні інвестиції</h4>
+												<div class="card__value-text">6 000 000 €</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Тип</h4>
+												<div class="card__value-text">Стартап і МСП</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Сектор</h4>
+												<div class="card__value-text">Малі і середні підприємства. Проекти міської мобільності середньої капіталізації</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Країна</h4>
+												<div class="card__value-text">Фінляндія</div>
+											</div>
+										</div>
+									</div>
+								</article>
+								<article class="card">
+									<a href="#" class="card__image">
+										<img src="@img/train.jpg" alt="" />
+									</a>
+									<div class="card__body">
+										<div class="card__heading">
+											<div class="card__code">IНПО-20243899</div>
+											<button class="card__favorite-btn _icon-heart"></button>
+										</div>
+										<h3 class="card__title">
+											<a href="#">Дистанційне початкове інвестування</a>
+										</h3>
+										<div class="card__description">
+											<h4 class="card__description-label">КОРОТКИЙ ОПИС</h4>
+											<div class="card__description-text">
+												REMOTED - це підприємство, що розвиває міську мобільність. Ми використовуємо автоматизовані автобуси як частинку громадського транспорту та мобільності
+												старовинного містечка.
+											</div>
+										</div>
+										<div class="card__values">
+											<div class="card__value">
+												<h4 class="card__value-label">Необхідні інвестиції</h4>
+												<div class="card__value-text">6 000 000 €</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Тип</h4>
+												<div class="card__value-text">Стартап і МСП</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Сектор</h4>
+												<div class="card__value-text">Малі і середні підприємства. Проекти міської мобільності середньої капіталізації</div>
+											</div>
+											<div class="card__value">
+												<h4 class="card__value-label">Країна</h4>
+												<div class="card__value-text">Фінляндія</div>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+							<a href="#" class="cards__button button button--big">Більше проектів</a>
+						</div>
+					</div>
+				</div>
+				@@include('html/_contacts-section.htm',{})
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
